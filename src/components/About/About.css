@@ -1,0 +1,32 @@
+.About {
+  padding: 80px 0px;
+}
+.About h2 {
+  text-transform: capitalize !important;
+}
+.About h2 span {
+  color: var(--section-color) !important;
+}
+.About .image img {
+  width: 100% !important;
+}
+.About .details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.About .details h2 {
+  margin: 0 !important;
+  text-align: left !important;
+}
+.About .details p {
+  opacity: 0.85;
+  font-size: 20px !important;
+  color: var(--section-color) !important;
+}
+.About .details p span {
+  color: var(--main-color);
+}
+.About button {
+  width: fit-content;
+}

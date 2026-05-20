@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #cece2b;
+  --stars-color: gold;
+  --body-bg: #eee;
+  --section-bg: #fff;
+  --section-color: #000;
+  --p-fs: 20px;
+}
+.darkMode {
+  --main-color: #f4c542;
+  --stars-color: #ffd700;
+  --body-bg: #121212;
+  --section-bg: #1e1e1e;
+  --section-color: #f5f5f5;
+}
+main {
+  font-family: "Tajawal", sans-serif !important;
+  background-color: var(--body-bg) !important;
+  transition: all 0.3s ease-in-out !important;
+}
+.mode {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #fff;
+}
+a {
+  text-decoration: none !important;
+}
+.btn-primary,
+.btn-secondary {
+  background-color: transparent !important;
+  padding: 8px 15px !important;
+  border-radius: 0px !important;
+  font-size: 18px !important;
+  transition: all 0.3s ease-in-out !important;
+  border-radius: 6px !important;
+}
+.btn-primary {
+  color: #fff !important;
+  border: 2px solid #fff !important;
+}
+.btn-secondary {
+  color: var(--main-color) !important;
+  border: 2px solid var(--main-color) !important;
+}
+.btn-secondary:hover,
+.btn-primary:hover {
+  background-color: #cece2b !important;
+  color: #3d464d !important;
+}
+.radius-8 {
+  border-radius: 8px !important;
+}
+.h2 {
+  text-align: center !important;
+  margin-bottom: 40px !important;
+  color: var(--main-color) !important;
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+}
+.g {
+  --bs-gutter-y: 20px !important;
+  --bs-gutter-x: 20px !important;
+}
+.star {
+  color: var(--stars-color) !important;
+}
+.f-title {
+  font-size: 25px !important;
+  font-weight: 700 !important;
+}
+.f-p {
+  line-height: 1.7;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  text-align: center;
+}
+.empty {
+  text-transform: capitalize !important;
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.full {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+.full .h2 {
+  color: rgb(172, 24, 24) !important;
+  width: 70%;
+}

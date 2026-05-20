@@ -1,0 +1,18 @@
+.Categories {
+  padding: 40px 0;
+}
+.Categories .cat-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--section-bg);
+    color: var(--section-color);
+    padding: 20px 10px;
+    text-align: center;
+}
+.Categories .cat-item b{
+    font-size: var(--p-fs);
+}
+.Categories .cat-item img {
+  width: 25%;
+}

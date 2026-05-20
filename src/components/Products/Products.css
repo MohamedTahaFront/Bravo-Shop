@@ -1,0 +1,46 @@
+.Products {
+  padding: 40px 0;
+}
+.Shop {
+  padding: 80px 0 !important;
+}
+.Products .card .imgShop {
+  height: 210px;
+  width: 60%;
+  display: block;
+  padding: 20px;
+}
+.Products .card .title {
+  color: var(--main-color);
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+}
+.Products .card .price {
+  font-size: 20px;
+}
+.Products .card img {
+  object-fit: contain !important;
+  height: 250px;
+  transition: all 0.3s ease-in-out;
+}
+.Products .card img:hover {
+  scale: 1.1;
+}
+.Products .icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Products .icon {
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-color);
+  cursor: pointer;
+}

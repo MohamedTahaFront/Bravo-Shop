@@ -1,0 +1,78 @@
+.Cart {
+  padding: 80px 0;
+}
+.Cart .items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: var(--section-bg);
+  color: var(--section-color);
+  border-radius: 8px;
+  padding: 20px;
+}
+.Cart .items img {
+  height: 80px;
+  width: 80px;
+  object-fit: contain;
+}
+.Cart .items .text-danger {
+  font-size: 30px;
+  cursor: pointer;
+}
+.Cart .quantity_box {
+  display: flex;
+  align-items: center;
+}
+.Cart .quantity_box button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Cart .quantity_box span {
+  width: 50px;
+  text-align: center;
+}
+.Cart .fixed-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  padding: 20px;
+  position: sticky;
+  bottom: 20px;
+  background-color: var(--section-bg);
+  color: var(--section-color);
+  margin-top: 20px;
+  border: 2px solid var(--main-color);
+}
+
+@media (max-width: 767px) {
+  .Cart .fixed-box span {
+    font-size: 18px !important;
+  }
+  .Cart .items {
+    padding: 10px;
+    gap: 5px;
+  }
+  .Cart .items img {
+    height: 60px;
+    width: 60px;
+  }
+  .Cart .items * {
+    font-size: 15px !important;
+  }
+
+  .Cart .quantity_box button {
+    width: 15px !important;
+    height: 20px !important;
+    border-radius: 4px !important;
+    font-size: 12px !important;
+  }
+  .Cart .quantity_box span {
+    width: 30px;
+    font-size: 12px !important;
+  }
+}

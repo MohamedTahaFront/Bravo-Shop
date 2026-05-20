@@ -1,0 +1,37 @@
+footer {
+  color: #fff;
+  background-color: #3d464d;
+  padding: 40px 0;
+}
+footer .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+footer .links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .links a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+footer .links a i {
+  font-size: 20px;
+}
+footer .links a:hover {
+  color: var(--main-color);
+}
+footer .btn-main,
+footer .btn-main:hover,
+footer .btn-main:hover:active {
+  background-color: var(--main-color);
+  color: #3d464d;
+  border: none;
+}

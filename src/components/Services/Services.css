@@ -1,0 +1,20 @@
+.Services {
+  padding: 40px 0;
+}
+.Services .service-item {
+  background-color: var(--section-bg);
+  color: var(--section-color);
+  padding: 30px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: var(--p-fs);
+  font-weight: 500;
+}
+.Services .service-item p {
+  margin: 0;
+}
+.Services .service-item svg {
+  color: var(--main-color);
+  font-size: 25px;
+}

@@ -1,0 +1,25 @@
+.Slider {
+  padding: 40px 0;
+}
+.Slider .slide-bar {
+    padding: 20px;
+    background-color: #ccc;
+    border-radius: 8px;
+    position: relative;
+}
+.Slider .slide-bar .swiper-pagination-bullet-active {
+    background-color: var(--main-color);
+}
+.Slider .slide-bar .swiper-pagination {
+    bottom: -30px;
+}
+.Slider .slide-bar img {
+    width: 100%;
+    cursor: pointer;
+    height: 100%;
+    object-fit: contain;
+}
+.Slider .my-row {
+    position:static;
+    height: 200px;
+}
