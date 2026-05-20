@@ -1,16 +1,35 @@
-# React + Vite
+# 🛒 Bravo Shop - Mohamed Elsayed (Mohamed Taha)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully featured E-commerce Frontend web application built using **React 19** and **Bootstrap 5**, dynamically fetching and rendering product data from 3 different sources simultaneously.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
+🔗 **[Click here to view the live website](https://react-landing-48hf.vercel.app/)**
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- **Triple Data Sourcing:** Dynamically renders products from local data, FakeStore API, and DummyJSON API.
+- **Fully Functional Cart:** Complete add/remove operations, quantity management with negative-value protection, and total price calculation using `.reduce()`.
+- **Wishlist & Routing:** Integrated wishlist system to save favorite items, with smooth page navigation powered by `React Router DOM v7`.
+- **Dynamic Dark/Light Mode:** Full dual-theme capability toggled seamlessly with a single click.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- **Developer:** Mohamed Elsayed (Mohamed Taha)
+- **Core Technologies:** React 19 / React Router DOM v7 / Bootstrap 5.3
+- **Data & UI Libraries:** Axios / Swiper JS / SweetAlert2 / React Spinners & Icons
+
+---
+
+## 📦 Project Setup
+
+```bash
+git clone [https://github.com/MohamedTahaFront/Bravo-Shop.git](https://github.com/MohamedTahaFront/Bravo-Shop.git)
+cd project
+npm install
+npm run dev
