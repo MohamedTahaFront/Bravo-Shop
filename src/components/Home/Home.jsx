@@ -5,13 +5,13 @@ import Categories from "../Categories/Categories";
 import Products from "../Products/Products.jsx";
 import Slider from "../Slider/Slider.jsx";
 
-function Home({ addToCart, addToWishList }) {
+function Home() {
   return (
     <>
       <Header />
       <Services />
       <Categories />
-      <Products addToCart={addToCart} addToWishList={addToWishList} />
+      <Products  />
       <Slider />
     </>
   );

@@ -3,9 +3,17 @@ import { FaHeart } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
 import {  Link, NavLink } from "react-router-dom";
 import { MdDarkMode , MdLightMode } from "react-icons/md";
+import { useContext } from "react";
+import { apiContext } from "../../context/ApiContext";
+import { cartContext } from "../../context/CartContect";
+import { wishlistContext } from "../../context/WishlistContext";
 
 
-function Navbar({cart , wishList ,handelMode , mode}) {
+function Navbar() {
+  const {handelMode , mode} = useContext(apiContext)
+  const {cart} = useContext(cartContext)
+  const {wishList} = useContext(wishlistContext)
+  
   return <nav className="navbar navbar-expand-lg bg-body-tertiary sticky-top">
   <div className=" container">
     <a className="navbar-brand" >Bravo <span>Shop</span></a>

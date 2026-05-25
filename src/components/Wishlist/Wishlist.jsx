@@ -1,8 +1,13 @@
+import { useContext } from "react";
 import "./Wishlist.css";
 import { FaShoppingCart } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
+import { cartContext } from "../../context/CartContect";
+import { wishlistContext } from "../../context/WishlistContext";
 
-function Wishlist({ wishList, addToCart, deleteWishList }) {
+function Wishlist() {
+  const {addToCart} = useContext(cartContext)
+  const { wishList, deleteWishList } = useContext(wishlistContext)
   return (
     <div className="Wishlist">
       <div className="container">

@@ -3,8 +3,13 @@ import { FaStar } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
 import productsData from "./Products";
+import { useContext } from "react";
+import { cartContext } from "../../context/CartContect";
+import { wishlistContext } from "../../context/WishlistContext";
 
-function Products({addToCart , addToWishList}) {
+function Products() {
+  const {addToCart} = useContext(cartContext)
+  const {addToWishList} = useContext(wishlistContext)
   return (
     <div className="Products">
       <div className="container">

@@ -1,7 +1,10 @@
+import { useContext } from "react";
 import "./Cart.css";
 import { RiDeleteBin5Line } from "react-icons/ri";
+import { cartContext } from "../../context/CartContect";
 
-function Cart({ cart, deleteProduct, increment, decrement }) {
+function Cart() {
+  const { cart, deleteProduct, increment, decrement } = useContext(cartContext)
 
   const total = cart.reduce((sum , product)=> sum + (product.price * product.quantity) , 0 )
 

@@ -3,16 +3,17 @@ import productsData from "../Products/Products";
 import { FaHeart, FaStar } from "react-icons/fa6";
 import { FaShoppingCart } from "react-icons/fa";
 import { PulseLoader } from "react-spinners";
+import { useContext } from "react";
+import { apiContext } from "../../context/ApiContext";
+import { cartContext } from "../../context/CartContect";
+import { wishlistContext } from "../../context/WishlistContext";
 
-function Shop({
-  fakeProducts,
-  dummyProducts,
-  addToWishList,
-  addToCart,
-  loading,
-  Error
-}) {
-// ------------------- Loading , error -----------------------//
+function Shop() {
+
+  const { Error, loading, fakeProducts, dummyProducts } = useContext(apiContext);
+  const {addToCart} = useContext(cartContext);
+  const {addToWishList} = useContext(wishlistContext);
+  // ------------------- Loading , error -----------------------//
 
   if (loading)
     return (
@@ -20,12 +21,13 @@ function Shop({
         <PulseLoader color="#cece2b" />
       </div>
     );
-    if(Error) return (
+  if (Error)
+    return (
       <div className="full">
         <b className="h2">{Error}</b>
       </div>
-    )
-// ------------------------------------------------------------//
+    );
+  // ------------------------------------------------------------//
 
   return (
     <div className="Products Shop">

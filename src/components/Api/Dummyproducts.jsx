@@ -3,15 +3,18 @@ import { FaHeart } from "react-icons/fa6";
 import { FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { PulseLoader } from "react-spinners";
+import { useContext } from "react";
+import { apiContext } from "../../context/ApiContext";
+import { cartContext } from "../../context/CartContect";
+import { wishlistContext } from "../../context/WishlistContext";
 
-function Dummyproducts({
-  dummyProducts,
-  addToCart,
-  addToWishList,
-  loading,
-  Error,
-}) {
-// ------------------- Loading , error -----------------------//
+function Dummyproducts() {
+  
+  const { dummyProducts, loading, Error } = useContext(apiContext);
+  const { addToCart } = useContext(cartContext);
+  const { addToWishList } = useContext(wishlistContext);
+
+  // ------------------- Loading , error -----------------------//
 
   if (loading)
     return (

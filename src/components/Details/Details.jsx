@@ -1,12 +1,15 @@
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import "./Details.css";
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { FaStar } from "react-icons/fa6";
 import { FaShoppingCart } from "react-icons/fa";
 import { PulseLoader } from "react-spinners";
+import { cartContext } from "../../context/CartContect";
 
-function Details({ addToCart }) {
+function Details() {
+  const {addToCart} = useContext(cartContext)
+
   const location = useLocation();
   const navigate = useNavigate();
   const { id } = useParams();
