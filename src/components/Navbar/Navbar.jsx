@@ -36,7 +36,7 @@ function Navbar() {
             Products
           </a>
           <ul className="dropdown-menu">
-            <li><NavLink to={"/fackapi"} className="dropdown-item mb-1" >Fake API</NavLink></li>
+            <li><NavLink to={"/fakeapi"} className="dropdown-item mb-1" >Fake API</NavLink></li>
             <li><NavLink to={"/dummyapi"} className="dropdown-item" >Dummy API</NavLink></li>
           </ul>
         </li>

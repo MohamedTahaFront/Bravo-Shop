@@ -20,7 +20,7 @@ function Details() {
   useEffect(() => {
     const getDetails = async () => {
       try {
-        if (location.pathname.includes("fackapi")) {
+        if (location.pathname.includes("fakeapi")) {
           let { data } = await axios.get(
             `https://fakestoreapi.com/products/${id}`,
           );
